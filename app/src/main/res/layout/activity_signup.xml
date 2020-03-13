@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/endblue"
+        android:orientation="vertical">
+
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/signup_imageId"
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/camera"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#4aa3c3"
+            app:civ_shadow_radius="10" />
+
+        <EditText
+            android:id="@+id/signup_nameId"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/name"
+            android:hint="  Full Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+
+        <EditText
+            android:id="@+id/signup_emailId"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/email"
+            android:hint="  Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp" />
+
+
+        <EditText
+            android:id="@+id/signup_passwordId"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/key"
+            android:hint=" Password"
+            android:inputType="numberPassword"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:id="@+id/signup_numberId"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/phone"
+            android:inputType="numberPassword"
+            android:hint=" MobileNumber"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/signupBTN"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_round"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="By creating an account you agree to our Tearms
+            and Conditions and Privacy policy  "
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/accountId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="55dp"
+                android:text="Already have an account?"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/signinTV"
+                android:layout_toRightOf="@id/accountId"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:paddingLeft="5dp"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

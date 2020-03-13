@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/endblue">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15sp"
+            android:text="Log In"
+            android:textSize="40dp" />
+
+
+        <EditText
+            android:id="@+id/signin_emailId"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/email"
+            android:hint="   Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/signin_passwordId"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_below="@id/signin_emailId"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/password"
+            android:inputType="numberPassword"
+            android:hint=" Password"
+            android:paddingLeft="10dp" />
+
+
+
+        <Button
+            android:id="@+id/signinBTN"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_below="@id/signin_passwordId"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_round"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signinBTN">
+
+            <TextView
+                android:id="@+id/accId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="55dp"
+                android:text="Have no account?"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/signupTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/accId"
+                android:paddingLeft="5dp"
+                android:text="Sign Up?"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/signin_progressbarId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

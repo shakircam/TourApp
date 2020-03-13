@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/tourNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tour Name"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:id="@+id/tourDescriptionET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tour Description"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/startDP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date"
+        android:drawableRight="@drawable/ic_event_note_black_24dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/endDP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Date"
+        android:drawableRight="@drawable/ic_event_note_black_24dp"
+
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/expensetypeET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Type"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/expenseamountET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="text"
+        android:drawableRight="@drawable/taka"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+
+        >
+        <ImageView
+            android:id="@+id/img_id_activity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_image_black_24dp"
+            android:scaleType="centerCrop"
+            />
+        <Button
+            android:id="@+id/btn_add_document_id_activity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="Add Document"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/budgetET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Tour Budget"/>
+    <Button
+        android:id="@+id/saveTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Your Trip"
+        android:layout_marginTop="80dp"
+       />
+</LinearLayout>
