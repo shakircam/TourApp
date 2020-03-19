@@ -10,43 +10,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/endblue"
+        android:background="@mipmap/reg"
         android:orientation="vertical">
 
 
-
-        <com.mikhaellopez.circularimageview.CircularImageView
-            android:id="@+id/signup_imageId"
-            android:layout_width="140dp"
-            android:layout_height="130dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/camera"
-            app:civ_border_color="#EEEEEE"
-            app:civ_border_width="4dp"
-            app:civ_shadow="true"
-            app:civ_shadow_color="#4aa3c3"
-            app:civ_shadow_radius="10" />
-
         <EditText
             android:id="@+id/signup_nameId"
-            android:layout_width="330dp"
+            android:layout_width="370dp"
             android:layout_height="42dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edit_round"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/yello_button"
             android:drawableLeft="@drawable/name"
             android:hint="  Full Name"
             android:inputType="textPersonName"
             android:paddingLeft="10dp" />
 
-
         <EditText
             android:id="@+id/signup_emailId"
-            android:layout_width="330dp"
+            android:layout_width="370dp"
             android:layout_height="42dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_round"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/yello_button"
             android:drawableLeft="@drawable/email"
             android:hint="  Email"
             android:inputType="textEmailAddress"
@@ -55,46 +41,40 @@
 
         <EditText
             android:id="@+id/signup_passwordId"
-            android:layout_width="330dp"
+            android:layout_width="370dp"
             android:layout_height="42dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_round"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/yello_button"
             android:drawableLeft="@drawable/key"
             android:hint=" Password"
             android:inputType="numberPassword"
             android:paddingLeft="10dp" />
         <EditText
             android:id="@+id/signup_numberId"
-            android:layout_width="330dp"
+            android:layout_width="370dp"
             android:layout_height="42dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_round"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/yello_button"
             android:drawableLeft="@drawable/phone"
             android:inputType="numberPassword"
             android:hint=" MobileNumber"
             android:paddingLeft="10dp" />
 
         <Button
+
             android:id="@+id/signupBTN"
-            android:layout_width="330dp"
+            android:layout_width="300dp"
             android:layout_height="42dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/button_round"
             android:text="Sign Up"
             android:textAllCaps="false"
             android:textSize="20dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:text="By creating an account you agree to our Tearms
-            and Conditions and Privacy policy  "
-            android:textSize="16dp"
-            android:textStyle="normal" />
+
 
         <RelativeLayout
             android:layout_width="match_parent"

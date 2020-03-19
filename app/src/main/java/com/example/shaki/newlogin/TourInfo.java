@@ -45,5 +45,39 @@ public class TourInfo{
         this.expenseAmount = expenseAmount;
     }
 
+    public String getTourName() {
+        return tourName;
+    }
 
+    public String getTourDesc() {
+        return tourDesc;
+    }
+
+    public String getMemoryCaption() {
+        return memoryCaption;
+    }
+
+    public String getExpenseType() {
+        return expenseType;
+    }
+
+    public double getStartDate() {
+        return startDate;
+    }
+
+    public double getEndDate() {
+        return endDate;
+    }
+
+    public int getTourPic() {
+        return tourPic;
+    }
+
+    public double getTourBudget() {
+        return tourBudget;
+    }
+
+    public double getExpenseAmount() {
+        return expenseAmount;
+    }
 }

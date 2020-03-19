@@ -1,16 +1,17 @@
 package com.example.shaki.newlogin;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -20,14 +21,10 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText signup_name, signup_email, signup_password, signup_number;
     private TextView signinTV;
     private Button signupBTN;
-    private ImageView signup_imageView;
     private FirebaseAuth mAuth;
     private FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
@@ -40,7 +37,6 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         signup_name = findViewById(R.id.signup_nameId);
         signup_email = findViewById(R.id.signup_emailId);
         signup_password = findViewById(R.id.signup_passwordId);
-        signup_imageView = findViewById(R.id.signup_imageId);
         signup_number = findViewById(R.id.signup_numberId);
         signupBTN = findViewById(R.id.signupBTN);
         signinTV = findViewById(R.id.signinTV);

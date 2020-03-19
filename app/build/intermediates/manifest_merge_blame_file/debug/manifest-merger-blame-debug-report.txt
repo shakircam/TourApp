@@ -5,7 +5,7 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="23"
+8        android:minSdkVersion="16"
 8-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="28" />
 9-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml
@@ -30,7 +30,7 @@
 18-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\e0db70d261f16441542f6c60509c2e20\play-services-measurement-16.4.0\AndroidManifest.xml:26:22-107
 19
 20    <application
-20-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:7:5-26:19
+20-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:7:5-25:19
 21        android:allowBackup="true"
 21-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:8:9-35
 22        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -44,37 +44,35 @@
 26-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
 27-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:12:9-35
-28        android:theme="@style/AppTheme" >
-28-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:13:9-40
-29        <activity android:name="com.example.shaki.newlogin.Add_Expense_And_Memory" />
-29-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:14:9-69
-29-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:14:19-57
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:13:9-40
 30        <activity android:name="com.example.shaki.newlogin.TourHistoryActivity" />
-30-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:15:9-57
-30-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:15:19-54
+30-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:14:9-57
+30-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:14:19-54
 31        <activity android:name="com.example.shaki.newlogin.MainActivity" >
-31-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:16:9-22:20
-31-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:16:19-47
+31-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:15:9-21:20
+31-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:15:19-47
 32            <intent-filter>
-32-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:17:13-21:29
+32-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:16:13-20:29
 33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:18:17-69
-33-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:18:25-66
+33-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:17:17-69
+33-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:17:25-66
 34
 35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:20:17-77
-35-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:20:27-74
+35-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:19:17-77
+35-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:19:27-74
 36            </intent-filter>
 37        </activity>
 38        <activity android:name="com.example.shaki.newlogin.SignupActivity" />
-38-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:23:9-52
-38-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:23:19-49
+38-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:22:9-52
+38-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:22:19-49
 39        <activity android:name="com.example.shaki.newlogin.TourActivity" />
-39-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:24:9-50
-39-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:24:19-47
+39-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:23:9-50
+39-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:23:19-47
 40        <activity android:name="com.example.shaki.newlogin.TourInfoActivity" />
-40-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:25:9-54
-40-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:25:19-51
+40-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:24:9-54
+40-->C:\Users\Ibrahim\Downloads\NewLogin\app\src\main\AndroidManifest.xml:24:19-51
 41        <activity
 41-->[com.google.firebase:firebase-auth:16.2.1] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\be05d331db4d79f2d3b94adcf6cc0649\firebase-auth-16.2.1\AndroidManifest.xml:24:9-31:50
 42            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

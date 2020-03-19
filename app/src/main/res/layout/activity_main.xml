@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/log"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,25 +12,14 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/endblue">
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15sp"
-            android:text="Log In"
-            android:textSize="40dp" />
-
+        android:layout_height="match_parent">
 
         <EditText
             android:id="@+id/signin_emailId"
-            android:layout_width="330dp"
+            android:layout_width="370dp"
             android:layout_height="42dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/edit_round"
             android:drawableLeft="@drawable/email"
             android:hint="   Email"
@@ -38,12 +28,12 @@
 
         <EditText
             android:id="@+id/signin_passwordId"
-            android:layout_width="330dp"
+            android:layout_width="370dp"
             android:layout_height="42dp"
             android:layout_below="@id/signin_emailId"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/edit_round"
             android:drawableLeft="@drawable/password"
             android:inputType="numberPassword"
@@ -58,7 +48,7 @@
             android:layout_height="42dp"
             android:layout_below="@id/signin_passwordId"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/button_round"
             android:text="Sign In"
             android:textAllCaps="false"
