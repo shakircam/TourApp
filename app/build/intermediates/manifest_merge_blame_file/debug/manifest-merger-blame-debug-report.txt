@@ -5,14 +5,14 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
-8-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml
+8        android:minSdkVersion="21"
+8-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml
+9-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:6:5-67
-11-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:6:22-64
+11-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:6:5-67
+11-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:6:22-64
 12
 13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 14    <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -30,55 +30,57 @@
 18-->[com.google.android.gms:play-services-measurement:17.3.0] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\c286a662b2c14e12c87c511e7fbec4aa\jetified-play-services-measurement-17.3.0\AndroidManifest.xml:26:22-107
 19
 20    <application
-20-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:8:5-29:19
+20-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:8:5-29:19
 21        android:allowBackup="true"
-21-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:10:9-35
+21-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.0.0] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\1921e8b00664583b96275b63e35c8fb2\core-1.0.0\AndroidManifest.xml:22:18-86
+22-->[androidx.core:core:1.1.0] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\bcfc0b80df78591183083cc148e1cf2c\core-1.1.0\AndroidManifest.xml:24:18-86
 23        android:debuggable="true"
 24        android:icon="@mipmap/ic_launcher"
-24-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:11:9-43
+24-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:10:9-43
 25        android:label="@string/app_name"
-25-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:12:9-41
+25-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:11:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:13:9-54
+26-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:12:9-54
 27        android:supportsRtl="true"
-27-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:14:9-35
-28        android:testOnly="true"
-29        android:theme="@style/AppTheme" >
-29-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:15:9-40
+27-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:13:9-35
+28        android:theme="@style/AppTheme" >
+28-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:14:9-40
+29        <activity android:name="com.example.shaki.newlogin.WeatherActivity" />
+29-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:15:9-62
+29-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:15:19-50
 30        <activity android:name="com.example.shaki.newlogin.UplodeTourMomentActivity" />
-30-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:16:9-71
-30-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:16:19-59
+30-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:16:9-62
+30-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:16:19-59
 31        <activity android:name="com.example.shaki.newlogin.TourMomentActivity" />
-31-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:17:9-56
-31-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:17:19-53
+31-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:17:9-56
+31-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:17:19-53
 32        <activity android:name="com.example.shaki.newlogin.TourHistoryActivity" />
-32-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:18:9-57
-32-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:18:19-54
+32-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:18:9-57
+32-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:18:19-54
 33        <activity android:name="com.example.shaki.newlogin.MainActivity" >
-33-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:19:9-25:20
-33-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:19:19-47
+33-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:19:9-25:20
+33-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:19:19-47
 34            <intent-filter>
-34-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:20:13-24:29
+34-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:20:13-24:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:21:17-69
-35-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:21:25-66
+35-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:21:17-69
+35-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:21:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:23:17-77
-37-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:23:27-74
+37-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:23:17-77
+37-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:23:27-74
 38            </intent-filter>
 39        </activity>
 40        <activity android:name="com.example.shaki.newlogin.SignupActivity" />
-40-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:26:9-52
-40-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:26:19-49
+40-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:26:9-52
+40-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:26:19-49
 41        <activity android:name="com.example.shaki.newlogin.TourActivity" />
-41-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:27:9-50
-41-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:27:19-47
+41-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:27:9-50
+41-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:27:19-47
 42        <activity android:name="com.example.shaki.newlogin.TourInfoActivity" />
-42-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:28:9-54
-42-->E:\Shakir\TourApp\app\src\main\AndroidManifest.xml:28:19-51
+42-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:28:9-54
+42-->E:\New folder\TourApp\app\src\main\AndroidManifest.xml:28:19-51
 43        <activity
 43-->[com.google.firebase:firebase-auth:19.3.0] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\4189c7719053123afa41922c68903b5b\jetified-firebase-auth-19.3.0\AndroidManifest.xml:24:9-31:50
 44            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
@@ -135,13 +137,13 @@
 70        </service>
 71
 72        <provider
-72-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\e410d89885435e1cc53ce931c5ebfb8c\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+72-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\17eefd567d1c36d90f227c0d726f1eba\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 73            android:name="com.squareup.picasso.PicassoProvider"
-73-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\e410d89885435e1cc53ce931c5ebfb8c\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+73-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\17eefd567d1c36d90f227c0d726f1eba\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 74            android:authorities="com.example.shaki.newlogin.com.squareup.picasso"
-74-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\e410d89885435e1cc53ce931c5ebfb8c\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+74-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\17eefd567d1c36d90f227c0d726f1eba\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 75            android:exported="false" />
-75-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\e410d89885435e1cc53ce931c5ebfb8c\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+75-->[com.squareup.picasso:picasso:2.71828] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\17eefd567d1c36d90f227c0d726f1eba\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 76
 77        <receiver
 77-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Ibrahim\.gradle\caches\transforms-2\files-2.1\14092e63484c408036652bf98e042e26\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20

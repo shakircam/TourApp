@@ -55,6 +55,12 @@ public class TourActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent2 = new Intent(this, TourMomentActivity.class);
                 startActivity(intent2);
                 break;
+
+
+            case R.id.weather:
+                Intent intent3 = new Intent(this, WeatherActivity.class);
+                startActivity(intent3);
+                break;
         }
 
     }

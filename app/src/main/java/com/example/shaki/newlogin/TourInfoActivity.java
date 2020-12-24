@@ -21,7 +21,7 @@ public class TourInfoActivity extends AppCompatActivity {
     DatabaseReference databaseReference;
     String title,desc,budget;
     private TextView textView;
-    private EditText tourtitle,tourDes,tourBudget;
+    private EditText tourTitle,tourDes,tourBudget,startDate,endDate;
     private Button save;
     private Context context;
     private String key;
@@ -33,9 +33,11 @@ public class TourInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tour_info);
         textView = findViewById(R.id.title);
 
-        tourtitle = findViewById(R.id.tourTitle);
+        tourTitle = findViewById(R.id.tourTitle);
         tourDes = findViewById(R.id.tourDes);
         tourBudget = findViewById(R.id.tourBudget);
+        startDate = findViewById(R.id.startDate);
+        endDate = findViewById(R.id.endDate);
         save = findViewById(R.id.saveId);
         databaseReference = FirebaseDatabase.getInstance().getReference("User");
 
@@ -56,16 +58,18 @@ public class TourInfoActivity extends AppCompatActivity {
     }
 
     public void saveDataToFireBase(){
-        String title = tourtitle.getText().toString().trim();
+        String title = tourTitle.getText().toString().trim();
         String desc = tourDes.getText().toString().trim();
         String budget = tourBudget.getText().toString().trim();
+        String sDatePicker = startDate.getText().toString().trim();
+        String eDatePicker = endDate.getText().toString().trim();
         String key = databaseReference.push().getKey();
 
         TourInformation tourInformation = new TourInformation(title,desc,budget);
         databaseReference.child(key).setValue(tourInformation);
 
         Toast.makeText(getApplicationContext(),"UserProfile Data are saved",Toast.LENGTH_SHORT).show();
-        tourtitle.setText("");
+        tourTitle.setText("");
         tourDes.setText("");
         tourBudget.setText("");
 

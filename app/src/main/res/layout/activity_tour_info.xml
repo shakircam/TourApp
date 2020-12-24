@@ -12,6 +12,7 @@
         android:textSize="28dp"
         android:textColor="#0C0C0C"
         android:paddingLeft="75dp"
+        android:layout_marginTop="30dp"
         android:text="Add New Tour Info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -20,11 +21,13 @@
 
     <LinearLayout
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="10dp"
+
         android:background="@drawable/edit_round"
         android:orientation="vertical"
         android:paddingLeft="20dp"
-        android:layout_width="390dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
@@ -53,6 +56,28 @@
             android:layout_margin="10dp"
             android:textSize="18sp"
             android:hint="Tour Budget:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+
+            android:hint="Start Date"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:id="@+id/startDate"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+
+            android:hint="End Date"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:id="@+id/endDate"
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
