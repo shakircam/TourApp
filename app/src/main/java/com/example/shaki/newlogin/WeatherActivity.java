@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.Locale;
 
 public class WeatherActivity extends AppCompatActivity {
-    String CITY = "comilla,bd";
+    String CITY = "dhaka,bd";
     String API = "06050482c39b4e2739cbb54d7ea5d637";
 
     TextView addressTxt, updated_atTxt, statusTxt, tempTxt, temp_minTxt, temp_maxTxt, sunriseTxt,

@@ -1,110 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/reg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignupActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@mipmap/reg"
-        android:orientation="vertical">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.Guideline>
 
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signup_nameId"
-            android:layout_width="370dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="270dp"
-            android:background="@drawable/yello_button"
-            android:drawableLeft="@drawable/name"
-            android:hint="  Full Name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="45dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            android:background="@drawable/button"
+            android:drawableStart="@drawable/name"
+            android:hint="@string/full_name"
             android:inputType="textPersonName"
-            android:paddingLeft="10dp" />
+            />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signup_emailId"
-            android:layout_width="370dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/yello_button"
-            android:drawableLeft="@drawable/email"
-            android:hint="  Email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_nameId"
+            android:background="@drawable/button"
+            android:drawableStart="@drawable/email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
 
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signup_passwordId"
-            android:layout_width="370dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/yello_button"
-            android:drawableLeft="@drawable/key"
-            android:hint=" Password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button"
+            android:drawableStart="@drawable/key"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_emailId"
+            android:hint="@string/password"
             android:inputType="numberPassword"
-            android:paddingLeft="10dp" />
-        <EditText
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signup_numberId"
-            android:layout_width="370dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/yello_button"
-            android:drawableLeft="@drawable/phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button"
+            android:drawableStart="@drawable/phone"
             android:inputType="numberPassword"
-            android:hint=" MobileNumber"
-            android:paddingLeft="10dp" />
+            android:hint="@string/mobilenumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_passwordId"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
 
             android:id="@+id/signupBTN"
             android:layout_width="300dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="55dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="25dp"
             android:layout_marginTop="35dp"
             android:background="@drawable/button_round"
             android:text="Sign Up"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_numberId"
             android:textAllCaps="false"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
 
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/accountId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:paddingLeft="55dp"
-                android:text="Already have an account?"
-                android:textSize="16dp" />
-
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/signinTV"
-                android:layout_toRightOf="@id/accountId"
-                android:layout_alignParentBottom="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign in"
-                android:paddingLeft="5dp"
-                android:textSize="18dp" />
+                android:text="Already have an account? Sign in"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signupBTN"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="18sp" />
 
 
-        </RelativeLayout>
 
 
-    </LinearLayout>
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

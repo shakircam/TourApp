@@ -24,23 +24,23 @@ import java.util.ArrayList;
 
 public class TourMomentActivity extends AppCompatActivity {
     ArrayList<UplodeImage> list1;
-    private FloatingActionButton fab;
     RecyclerView recyclerView;
     DatabaseReference databaseReference;
     ImageAdapter imageAdapter;
-    ProgressBar progressBar;
+    //ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tour_moment);
-        fab = findViewById(R.id.fabId);
-        progressBar = findViewById(R.id.prgressbarId);
+        FloatingActionButton fab = findViewById(R.id.fabId);
+       //progressBar = findViewById(R.id.prgressbarId);
         recyclerView = findViewById(R.id.recyclerid);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.hasFixedSize();
         databaseReference = FirebaseDatabase.getInstance().getReference("User");
         list1 = new ArrayList <UplodeImage>();
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +65,7 @@ public class TourMomentActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(getApplicationContext(), "Database Retrieve Error..........", Toast.LENGTH_SHORT).show();
-                progressBar.setVisibility(View.INVISIBLE);
+               // progressBar.setVisibility(View.INVISIBLE);
 
             }
         });

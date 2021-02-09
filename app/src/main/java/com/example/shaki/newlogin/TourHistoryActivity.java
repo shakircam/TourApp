@@ -5,6 +5,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -16,17 +18,19 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class TourHistoryActivity extends AppCompatActivity {
+public class TourHistoryActivity extends AppCompatActivity implements View.OnClickListener {
     ArrayList<TourInformation> list;
     RecyclerView recyclerView;
     DatabaseReference databaseReference;
     MyAdapter adapter;
+    int position;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tour_history);
+
         recyclerView = findViewById(R.id.recycler_viewId);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         databaseReference = FirebaseDatabase.getInstance().getReference("User");
@@ -48,7 +52,13 @@ public class TourHistoryActivity extends AppCompatActivity {
                     TourInformation tourInformation = dataSnapshot1.getValue(TourInformation.class);
                     list.add(tourInformation);
                 }
-                adapter = new MyAdapter( list,TourHistoryActivity.this);
+                adapter = new MyAdapter(list, getApplicationContext(), new MyAdapter.Onclick() {
+                    @Override
+                    public void onEvent(TourInformation inf, int pos) {
+                        position = pos;
+                    }
+                });
+
                 recyclerView.setAdapter(adapter);
             }
 
@@ -61,5 +71,10 @@ public class TourHistoryActivity extends AppCompatActivity {
 
 
         super.onStart();
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

@@ -1,82 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@color/cardview_light_background"
-    android:orientation="vertical"
-    android:padding="10dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:padding="8dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tourTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                android:textColor="#0F0707"
-                android:textSize="20sp"
-                android:layout_weight="2"
-                android:textStyle="bold">
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/title">
 
-            </TextView>
+            </androidx.appcompat.widget.AppCompatTextView>
 
-
-
-            <ImageView
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/delete_item"
-                android:layout_width="5dp"
-                android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="5dp"
-                android:src="@drawable/delete"
-                android:scaleType="center"
-                android:contentDescription="TODO" />
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:alpha="0.8"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                app:elevation="10dp"
+                app:icon="@drawable/delete"
+                app:iconTint="@color/purple_700"
+                app:iconGravity="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
 
-        </LinearLayout>
 
-
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
 
             android:id="@+id/tourDes"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="10dp"
-            android:textColor="#0F0707"
-            android:textSize="20sp"
-            android:textStyle="bold">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tourTitle"
+            tools:text="@string/description">
 
-        </TextView>
+        </androidx.appcompat.widget.AppCompatTextView>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
 
             android:id="@+id/tourBudget"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="10dp"
-            android:textColor="#0F0707"
-            android:textSize="20sp"
-            android:textStyle="bold">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tourDes"
+            tools:text="@string/budget">
 
-        </TextView>
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/sDate_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tourBudget"
+            tools:text="@string/startDate">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/eDate_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sDate_view"
+            tools:text="@string/endDate">
+
+        </androidx.appcompat.widget.AppCompatTextView>
 
 
-    </LinearLayout>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

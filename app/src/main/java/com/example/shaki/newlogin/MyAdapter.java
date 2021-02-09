@@ -15,27 +15,45 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     ArrayList<TourInformation> tourInformation;
     Context context;
+    Onclick onclick;
 
-    public MyAdapter(ArrayList<TourInformation> tourInformation, Context context) {
+    public interface Onclick {
+        void onEvent(TourInformation inf,int pos);
+    }
+
+    public MyAdapter(ArrayList<TourInformation> tourInformation, Context context,Onclick onclick) {
         this.tourInformation = tourInformation;
         this.context = context;
+        this.onclick = onclick;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
-        View view = LayoutInflater.from(context).inflate(R.layout.show_tour_info,parent,false);
-        MyViewHolder myViewHolder = new MyViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.show_tour_info,parent,false);
 
-        return myViewHolder;
+        return new MyViewHolder(view);
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.title.setText("Tour Title: "+tourInformation.get(position).getTitle());
-        holder.desc.setText("Tour Description: "+tourInformation.get(position).getDesc());
-        holder.budget.setText("Tour Budget: "+tourInformation.get(position).getBudget());
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
+        final TourInformation tour = tourInformation.get(position);
+        holder.title.setText("Tour Title: "+tour.getTitle());
+        holder.desc.setText("Tour Description: "+tour.getDesc());
+        //holder.budget.setText("Tour Budget: "+tourInformation.get(position).getBudget());
+        holder.budget.setText("Tour Budget: "+tour.getBudget()+" Tk ");
+        holder.sDate.setText("Start Date: "+tour.getsDatePicker());
+        holder.eDate.setText("End Date: "+tour.geteDatePicker());
+
+        holder.deleteItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tourInformation.remove(position);
+                notifyDataSetChanged();
+            }
+        });
 
     }
 

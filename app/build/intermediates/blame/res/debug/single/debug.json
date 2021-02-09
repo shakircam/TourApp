@@ -1,15 +1,15 @@
 [
     {
-        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sunrise.png.flat",
-        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable-v24\\sunrise.png"
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_arrow.xml.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\arrow.xml"
     },
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_arrow.xml.flat",
-        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\arrow.xml"
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sunrise.png.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable-v24\\sunrise.png"
     },
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pressure.png.flat",
@@ -32,12 +32,12 @@
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\place.xml"
     },
     {
-        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_yello_button.xml.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\yello_button.xml"
+    },
+    {
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -62,6 +62,10 @@
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_shakir.jpg.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable-v24\\shakir.jpg"
     },
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_weather.xml.flat",
@@ -144,6 +148,10 @@
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\ic_add_circle_black_24dp.xml"
     },
     {
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_button.xml.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\round_button.xml"
+    },
+    {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_history.xml.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\history.xml"
     },
@@ -164,6 +172,10 @@
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\layout\\activity_tour_info.xml"
     },
     {
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tree.jpg.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable-v24\\tree.jpg"
+    },
+    {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_plus.xml.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\plus.xml"
     },
@@ -178,6 +190,10 @@
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_camera.xml.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\camera.xml"
+    },
+    {
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_buton_edi.xml.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\buton_edi.xml"
     },
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -236,16 +252,20 @@
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\bg_gradient.xml"
     },
     {
-        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tour_car.xml.flat",
-        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\tour_car.xml"
-    },
-    {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_expense.xml.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\expense.xml"
     },
     {
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tour_car.xml.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\tour_car.xml"
+    },
+    {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_add_circle_24.xml.flat",
         "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable-v24\\add_circle_24.xml"
+    },
+    {
+        "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button.xml.flat",
+        "source": "E:\\New folder\\TourApp\\app\\src\\main\\res\\drawable\\button.xml"
     },
     {
         "merged": "E:\\New folder\\TourApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_round.xml.flat",

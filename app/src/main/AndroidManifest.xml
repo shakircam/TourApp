@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WeatherActivity"></activity>
+        <activity android:name=".ExpenseActivity"></activity>
+        <activity android:name=".WeatherActivity" />
         <activity android:name=".UplodeTourMomentActivity" />
         <activity android:name=".TourMomentActivity" />
         <activity android:name=".TourHistoryActivity" />

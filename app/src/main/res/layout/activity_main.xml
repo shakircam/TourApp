@@ -1,94 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@mipmap/log"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <EditText
+    </androidx.constraintlayout.widget.Guideline>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signin_emailId"
-            android:layout_width="370dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="290dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/edit_round"
-            android:drawableLeft="@drawable/email"
-            android:hint="   Email"
-            android:inputType="textEmailAddress"
-            android:paddingLeft="10dp" />
-
-        <EditText
-            android:id="@+id/signin_passwordId"
-            android:layout_width="370dp"
-            android:layout_height="42dp"
-            android:layout_below="@id/signin_emailId"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/edit_round"
-            android:drawableLeft="@drawable/password"
-            android:inputType="numberPassword"
-            android:hint=" Password"
-            android:paddingLeft="10dp" />
-
-
-
-        <Button
-            android:id="@+id/signinBTN"
-            android:layout_width="330dp"
-            android:layout_height="42dp"
-            android:layout_below="@id/signin_passwordId"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="60dp"
-            android:background="@drawable/button_round"
-            android:text="Sign In"
-            android:textAllCaps="false"
-            android:textSize="20dp" />
-
-
-        <RelativeLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/signinBTN">
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="37dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            android:background="@drawable/edit_round"
+            android:drawableStart="@drawable/email"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+             />
 
-            <TextView
-                android:id="@+id/accId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:paddingLeft="55dp"
-                android:text="Have no account?"
-                android:textSize="16dp" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/signin_passwordId"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signin_emailId"
+            android:background="@drawable/edit_round"
+            android:drawableStart="@drawable/password"
+            android:inputType="numberPassword"
+            android:hint="@string/Password"
+            />
 
-            <TextView
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signinBTN"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signin_passwordId"
+            android:background="@drawable/button_round"
+            android:text="@string/Sign_in"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/signupTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/accId"
-                android:paddingLeft="5dp"
-                android:text="Sign Up?"
-                android:textSize="18dp" />
-
-        </RelativeLayout>
-
-        <ProgressBar
-            android:visibility="gone"
-            android:layout_gravity="center"
-            android:id="@+id/signin_progressbarId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="85dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signinBTN"
+                android:text="@string/sign_up"
+                android:textSize="18sp" />
 
 
-    </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

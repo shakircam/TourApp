@@ -9,22 +9,22 @@
 
     <ImageView
         android:id="@+id/Image_UplodeId"
+        android:layout_margin="15dp"
         android:layout_width="match_parent"
-        android:layout_height="316dp">
+        android:layout_height="250dp">
 
     </ImageView>
+
     <Button
-        android:id="@+id/selectImageId"
-        android:layout_width="147dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="30dp"
-        android:text="Select Image"
-        android:textAllCaps="false"
-        android:textSize="18sp">
-
-    </Button>
-
+        android:id = "@+id/selectImageId"
+        android:textSize = "18sp"
+        android:textAlignment = "center"
+        android:background = "@drawable/round_button"
+        android:layout_width = "150dp"
+        android:textColor = "#000"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/image"
+        android:layout_height = "150dp" />
 
 
     <EditText
@@ -32,6 +32,7 @@
         android:layout_width="393dp"
         android:layout_height="74dp"
         android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
         android:hint="Description"
         android:inputType="text"
         android:textSize="18sp"
@@ -52,8 +53,8 @@
     <Button
         android:id="@+id/uplode_imageId"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="130dp"
-        android:text="Save"
+        android:layout_gravity="center"
+        android:text="@string/Save"
         android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
