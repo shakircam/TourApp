@@ -19,4 +19,11 @@
     <string name="mobilenumber">MobileNumber</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <string name="remaining">Remaining</string>
+    <string name="title_expense">Add Expense</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="amount">Enter Expense Amount</string>
+    <string name="name">Enter Expense Item</string>
+
 </resources>

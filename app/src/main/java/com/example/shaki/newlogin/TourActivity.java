@@ -9,19 +9,18 @@ import android.view.View;
 
 
 public class TourActivity extends AppCompatActivity implements View.OnClickListener{
-    private CardView newTour,tourHistory,tourExpense,tourMoment,nearbyPlace,weather;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tour);
 
-        newTour = findViewById(R.id.newTour);
-        tourHistory = findViewById(R.id.tourHistory);
-        tourExpense = findViewById(R.id.tourExpense);
-        tourMoment = findViewById(R.id.tourMoment);
-        nearbyPlace = findViewById(R.id.nearbyPlace);
-        weather = findViewById(R.id.weather);
+        CardView newTour = findViewById(R.id.newTour);
+        CardView tourHistory = findViewById(R.id.tourHistory);
+        CardView tourExpense = findViewById(R.id.tourExpense);
+        CardView tourMoment = findViewById(R.id.tourMoment);
+        CardView nearbyPlace = findViewById(R.id.nearbyPlace);
+        CardView weather = findViewById(R.id.weather);
 
 
 
@@ -60,6 +59,11 @@ public class TourActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.weather:
                 Intent intent3 = new Intent(this, WeatherActivity.class);
                 startActivity(intent3);
+                break;
+
+            case R.id.tourExpense:
+                Intent intent4 = new Intent(this, ExpenseActivity.class);
+                startActivity(intent4);
                 break;
         }
 

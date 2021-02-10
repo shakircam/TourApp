@@ -41,9 +41,6 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageViewHolder> {
               .fit().centerCrop()
               .into( holder.imageView);
 
-//      Glide.with(holder.imageView)
-//              .load(uplodeImage.getImageUrl())
-//              .into(holder.imageView);
 
     }
 

@@ -20,8 +20,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:text="Cloths"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
             android:textSize="20sp"
-            android:layout_width="170dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content">
 
         </androidx.appcompat.widget.AppCompatTextView>
@@ -29,9 +31,12 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/item_amount_ed"
             android:inputType="text"
+            app:layout_constraintStart_toEndOf="@id/item_name_ed"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:text="Cloths"
+            tools:text="500"
+            android:layout_marginStart="25dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
             android:textSize="20sp"
             android:layout_width="170dp"
             android:layout_height="wrap_content">

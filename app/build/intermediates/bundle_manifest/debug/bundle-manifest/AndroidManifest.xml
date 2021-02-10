@@ -23,6 +23,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.shaki.newlogin.ExpenseActivity" />
         <activity android:name="com.example.shaki.newlogin.WeatherActivity" />
         <activity android:name="com.example.shaki.newlogin.UplodeTourMomentActivity" />
         <activity android:name="com.example.shaki.newlogin.TourMomentActivity" />

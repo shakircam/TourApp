@@ -942,6 +942,7 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color cirular_textview_background
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
@@ -1105,7 +1106,6 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
-color startblue
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1119,6 +1119,8 @@ color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color whitel
+color yellow
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1570,6 +1572,8 @@ drawable button
 drawable button_round
 drawable camera
 drawable car
+drawable circular_text_view
+drawable circular_text_view1
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1602,6 +1606,7 @@ drawable expense
 drawable floating_24dp
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable half_circle_view
 drawable history
 drawable humidity
 drawable ic_add_circle_black_24dp
@@ -1745,6 +1750,7 @@ id alertTitle
 id aligned
 id all
 id always
+id amount_ex
 id animateToEnd
 id animateToStart
 id asConfigured
@@ -1760,9 +1766,11 @@ id beginning
 id blocking
 id bottom
 id bounce
+id budget_tv
 id buttonPanel
 id cache_measures
 id cancel_button
+id cancel_expense_bt
 id cardImage
 id cardText
 id center
@@ -1834,7 +1842,9 @@ id errorText
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id expense_recycler_view
 id fabId
+id fab_add
 id fade
 id fill
 id fill_horizontal
@@ -1855,6 +1865,7 @@ id group_divider
 id grouping
 id groups
 id guideline
+id guideline1
 id hideable
 id home
 id homeAsUp
@@ -1870,6 +1881,9 @@ id image
 id info
 id invisible
 id italic
+id item_amount_ed
+id item_name_ed
+id item_name_ex
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -1955,6 +1969,8 @@ id ratio
 id rectangles
 id recycler_viewId
 id recyclerid
+id remaining
+id remaining_balance_tv
 id reverseSawtooth
 id right
 id right_icon
@@ -1964,6 +1980,7 @@ id row_index_key
 id sDate
 id sDate_view
 id saveId
+id save_expense_bt
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2065,6 +2082,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id title_expense
 id title_template
 id toggle
 id top
@@ -2162,6 +2180,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_expense
 layout activity_main
 layout activity_signup
 layout activity_tour
@@ -2186,6 +2205,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_expense_create
+layout expense_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2276,10 +2297,12 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string amount
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string budget
+string cancel
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2362,6 +2385,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string name
 string password
 string password_toggle_content_description
 string path_password_eye
@@ -2370,11 +2394,14 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string price_format
 string project_id
+string remaining
+string save
 string search_menu_title
 string sign_up
 string startDate
 string status_bar_notification_info_overflow
 string title
+string title_expense
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\New folder\\TourApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "C:\\Users\\FoysaL\\StudioProjects\\TourApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ibrahim\\.gradle\\caches\\transforms-2\\files-2.1\\17263b709b1d9b30f4bbc207e484e488\\appcompat-1.2.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\FoysaL\\.gradle\\caches\\transforms-2\\files-2.1\\17263b709b1d9b30f4bbc207e484e488\\appcompat-1.2.0\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",
